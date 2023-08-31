@@ -77,7 +77,7 @@ resource "aws_security_group_rule" "blog_everything_out" {
 resource "aws_instance" "attia" {
   ami                    = data.aws_ami.app_ami.id
   instance_type          = var.instance_type
-  vpc_security_group_ids = ["attia]
+  vpc_security_group_ids = [attia]
 
   tags = {
     Name = "Attia vpc for Terraform"
