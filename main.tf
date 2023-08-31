@@ -20,7 +20,7 @@ data "aws_vpc" "default" {
 
 
 data "aws_vpc" "attia" {
-  default = ture
+  default = false
 }
   
 
