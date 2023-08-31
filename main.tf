@@ -18,6 +18,11 @@ data "aws_vpc" "default" {
   default = true
 }
 
+data "aws_vpc" "blog" {
+  default = false
+}
+
+
 data "aws_vpc" "attia" {
   default = false
 }
