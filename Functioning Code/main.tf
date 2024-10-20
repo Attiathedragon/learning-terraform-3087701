@@ -58,6 +58,13 @@ resource "aws_security_group" "blog" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    from_port = 25
+    to_port = 785
+    protocol = "tcp"
+    cidr_blocks = ["0.25.10.0"]
+  }
+
   egress {
     from_port = 0
     to_port = 0
